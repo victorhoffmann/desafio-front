@@ -1,0 +1,46 @@
+header {
+    background-color: var(--color-bgc);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 107px;
+    justify-content: space-between;
+}
+
+.logo h1{
+    color: var(--color-text-primary);
+    font-size: 26px;
+    line-height: 39px;
+}
+
+.logo span {
+    background: -webkit-linear-gradient(rgb(254, 49, 137), rgb(255, 0, 110));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+.links li {
+    margin-left: 50px;
+}
+
+.links a {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text-primary)
+}
+
+.links a:hover {
+    border-bottom: 3px solid var(--color-text-secundary);
+  }
+  
+.links a.ativada {
+    border-bottom: 3px solid var(--color-text-secundary);
+}
