@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import OutsideClickHandler from 'react-outside-click-handler'
 import Search from '../Search'
 import './style.css'
 const Header = () => {
@@ -21,9 +22,12 @@ const Header = () => {
                     </nav>
                 </div>
             </header>
-            {mostrar 
-            ? <Search />
-            : null}
+            {mostrar && (
+                <OutsideClickHandler onOutsideClick={() => {
+                    setMostrar(false)
+                }}>
+                    <Search/>
+                </OutsideClickHandler> )}
         </>
     )
 }

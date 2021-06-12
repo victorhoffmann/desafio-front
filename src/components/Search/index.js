@@ -13,17 +13,17 @@ const Search = () => {
     };
 
     return (
-        <>
+        <>  
             <aside>
                 <div className="maxWidthContainer">
                     <div className="pesquisa">
                         <form onSubmit={getData}>
-                            <input type="text" placeholder='Nome do filme...' onChange={(e) => {setTermPesquisa(e.target.value)}}/>
+                            <input type="text" placeholder='Nome do filme...' onChange={(e) => { setTermPesquisa(e.target.value) }} />
                             <div className="linhaSearch"></div>
                             <div className="resultFilmes">
                                 {pesquisa.length > 0
-                                ? <RenderResults filmes={pesquisa} />
-                                : null}
+                                    ? <RenderResults filmes={pesquisa} />
+                                    : null}
                             </div>
                         </form>
                     </div>

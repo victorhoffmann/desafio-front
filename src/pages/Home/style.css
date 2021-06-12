@@ -1,0 +1,26 @@
+.carouselTitle {
+    color: #eaeaea;
+    padding: 5vh 0 2vh;
+    max-width: 1039px;
+    margin: 0 auto;
+}
+
+.carouselTitle h1 {
+    font-size: 1.5rem;
+    color: var(--color-text-secundary);
+}
+
+.carouselTitle h1 span {
+    color: white;
+    font-weight: normal;
+}
+
+.carouselTitle h1 span bold{
+    color: white;
+    font-weight: bolder;
+}
+
+.carouselHome {
+    display: flex;
+    flex-direction: row;
+}

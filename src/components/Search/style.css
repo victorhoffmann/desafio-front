@@ -30,8 +30,3 @@ aside {
     margin-bottom: 5vh;
 }
 
-.resultFilmes {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 5vh;
-}

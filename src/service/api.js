@@ -6,6 +6,7 @@ const language = 'pt-BR'
 const base_url = 'https://api.themoviedb.org/3'
 const url_filme = `${base_url}/movie`
 const search = `${base_url}/search/movie/`
+const filmes_carousel = `${url_filme}/now_playing`
 
 
 export const filme_id = async (id) => {
@@ -45,6 +46,20 @@ export const filmes_search = async (busca) => {
                 query: `${busca}`,
                 page: 1,
                 inclue_adult: false
+            }});
+            return data['results']
+    } catch (error) {
+        
+    }
+}
+
+export const carousel_home = async () => {
+    try {
+        const { data } = await axios.get(`${filmes_carousel}`, {
+            params: {
+                api_key,
+                language,
+                page: 1
             }});
             return data['results']
     } catch (error) {
