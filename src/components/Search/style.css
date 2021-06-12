@@ -1,0 +1,37 @@
+aside {
+    position: absolute;
+    background-color: var(--color-bgc);
+    width: 99vw;
+    box-shadow: 0px 4px 25px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    flex-direction: column;
+}
+
+.pesquisa input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1039px;
+}
+
+.pesquisa input:focus-visible {
+    outline: none
+}
+
+.pesquisa .linhaSearch {
+    border: 2px solid var(--color-text-secundary);
+    margin-bottom: 5vh;
+}
+
+.resultFilmes {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5vh;
+}

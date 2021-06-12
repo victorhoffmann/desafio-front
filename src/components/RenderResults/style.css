@@ -1,0 +1,39 @@
+.card {
+    background-color: #252529;
+    border-radius: 4px;
+    flex: 1 1 30%;
+    margin: 8px;
+    padding: 16px;
+    border: 1px solid rgba(49, 49, 54, 1);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.card img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.infosCard {
+    padding-left: 2vh;
+    color: var(--color-text-secundary);
+    align-self: flex-start;
+}
+
+.infosCard h5 {
+    color: white;
+    margin: 1vh 0 0;
+    font-size: 1rem;
+}
+
+.infosCard p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.infosCard p span {
+    color: white;
+}

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { filme_id , video_filme_id} from '../../components/service/api'
-import image from '../../components/assets/images/teste.png'
+import { filme_id , video_filme_id} from '../../service/api'
 import './style.css'
 
 const Filme = () => {
@@ -21,7 +20,6 @@ const Filme = () => {
 
   return (
     <main>
-        {console.log(filme)}
         <div className="indexFilme">
             <div className="infosFilme">
                 <div className="fotoFilme">
@@ -45,7 +43,7 @@ const Filme = () => {
                     <h3>Trailer</h3>
                     <div className="linhaHorizontal"></div>
                     <div className="trailerVideo">
-                        <iframe width="560" height="315" src={`https://www.youtube.com/embed/${trailer}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src={`https://www.youtube.com/embed/${trailer}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
 
                 </div>
