@@ -9,12 +9,10 @@
 
 .infosFilme {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: #eaeaea;
-    justify-content: space-between;
     padding: 12vh 0;
-    max-width: 1039px;
-    margin: 0 auto;
+    align-items: center;
 }
 
 .fotoFilme img {
@@ -34,7 +32,7 @@
 
 .textFilme { 
     font-size: 1.25rem;
-    padding-left: 7vh
+    padding: 0 10vw;
 }
 
 .genr-nota {
@@ -72,6 +70,10 @@
     margin-bottom: 10vh
 }
 
+.trailerVideo {
+    padding: 0 5vw;
+}
+
 .trailerFilme iframe {
     width: 100%;
     height: 30rem;
@@ -88,7 +90,7 @@
     border: none;
     color: white;
     font-size: 1rem;
-    width: 10vw;
+    width: 100px;
     height: 5vh;
     cursor: pointer;
 }
@@ -96,4 +98,23 @@
 .voltarHome:hover {
     filter: drop-shadow(0px 0px 6px #FF0772);
     box-shadow: 0px 0px 6px 0px rgba(255, 7, 114, 1);
+}
+
+@media only screen and (min-width: 1040px) {
+    .trailerVideo {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .infosFilme {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1039px;
+        margin: 0 auto;
+    }
+
+    .textFilme { 
+        padding: 0 0 0 7vh;
+    }
 }
