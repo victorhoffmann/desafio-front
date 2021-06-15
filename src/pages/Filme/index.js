@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { filme_id , video_filme_id} from '../../service/api'
+import { filme_id , video_filme_id, renderGeneros} from '../../service/api'
 import './style.css'
 
 const Filme = () => {
@@ -28,7 +28,9 @@ const Filme = () => {
                 <div className="textFilme">
                     <h2>{filme.title}</h2>
                     <div className="genr-nota">
-                        <p>Genero</p>
+                        <p>{filme['genres'] 
+                        ? renderGeneros(filme.genres)
+                        : null}</p>
                         <p><i className="fas fa-star"></i><span> {filme.vote_average}</span></p>
                     </div>
                     <div className="sinopse">

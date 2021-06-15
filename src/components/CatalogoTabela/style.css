@@ -1,0 +1,144 @@
+.tabelaDeFilmes {
+    margin-top: 5vh;
+}
+
+.tabelaOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#searchParam,
+#changeView,
+.tabelaOptions button {
+    border: 2px solid rgba(46,45,49,1);
+    font-size: 1rem;
+    background: linear-gradient(180deg, #212125 0%, #2E2E35 100%), #212125;
+    border-radius: 4px;
+    padding: 1.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#topFilmes:focus {
+    border: none;
+    font-size: 1rem;
+    background: linear-gradient(288.57deg, rgba(254, 49, 137, 0.5) 5.7%, rgba(255, 0, 110, 0.5) 70.08%), #FF559E;
+    border-radius: 4px;
+    padding: 1.5vh 2.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    filter: drop-shadow(0px 0px 6px #FF0772);
+    box-shadow: 0px 0px 6px 0px rgba(255, 7, 114, 1);
+    cursor: pointer;
+}
+
+.tabelaOptions button {
+    margin-left: 2vh;
+}
+
+.tabelaResultadosList {
+    margin-top: 5vh;
+}
+
+.card__catalogo {
+    flex: 1 1 20%;
+    margin: 8px 0;
+    padding: 16px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.card__catalogo img,
+.card__catalogo__grid img {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__catalogo img:hover ,
+.card__catalogo__grid img:hover {
+    -webkit-filter: invert(40%) grayscale(50%) brightness(50%) sepia(100%) hue-rotate(-60deg) saturate(600%) contrast(2);
+      filter: grayscale(50%) brightness(50%) sepia(100%) hue-rotate(-60deg) saturate(600%) contrast(0.8);
+}
+
+.infosCard__catalogo {
+    padding-left: 2vh;
+    color: var(--color-text-secundary);
+    align-self: flex-start;
+}
+
+.infosCard__catalogo h5 {
+    color: white;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: initial;
+}
+
+.infosCard__catalogo p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.infosCard__catalogo p span {
+    color: white;
+}
+
+.infosCard__catalogo__nota {
+    margin-top: 1vh!important
+}
+
+.infosCard__catalogo p:last-child {
+    color: #9f9fa0;
+    margin-top: 2vh
+}
+
+.carregarMais {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.carregarMais button {
+    border: none;
+    font-size: 1rem;
+    background: linear-gradient(288.57deg, rgba(254, 49, 137, 0.5) 5.7%, rgba(255, 0, 110, 0.5) 70.08%), #FF559E;
+    border-radius: 4px;
+    padding: 1.5vh 2.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    filter: drop-shadow(0px 0px 6px #FF0772);
+    box-shadow: 0px 0px 6px 0px rgba(255, 7, 114, 1);
+    cursor: pointer;
+}
+
+.tabelaResultadosGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+.card__catalogo__grid {
+    border-radius: 4px;
+    flex: 1 1 40%;
+    padding: 0 0 5vh 0 ;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.card__catalogo__grid:nth-child(odd) {
+    padding-right: 2vw;
+}
+
+.card__catalogo__grid p:last-child {
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}

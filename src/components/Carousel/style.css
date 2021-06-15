@@ -1,0 +1,62 @@
+.carousel__card {
+    margin: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.carousel__card img {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.carousel__card img:hover {
+    -webkit-filter: invert(40%) grayscale(50%) brightness(50%) sepia(100%) hue-rotate(-60deg) saturate(600%) contrast(2);
+      filter: grayscale(50%) brightness(50%) sepia(100%) hue-rotate(-60deg) saturate(600%) contrast(0.8);
+}
+
+.carousel__infosCard {
+    color: white;
+}
+
+.carousel__infosCard p{
+    margin: 0;
+}
+
+.carousel__infosCard h5 {
+    margin: 1vh 0 0;
+    font-size: 1.25rem;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.carousel__infosCard p span {
+    color: var(--color-text-secundary);
+}
+
+.carouselHome{
+    display: flex;
+    flex-direction: row;
+}
+
+.carouselHome .left,
+.carouselHome .right {
+    flex: 5%;
+    height: 100%;
+    display: grid;
+    margin: auto 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.carouselHome .center {
+    display: flex;
+    flex-direction: row;
+}

@@ -5,22 +5,33 @@
     margin: 0 auto;
 }
 
-.carouselTitle h1 {
+.carouselTitle h1,
+.catalogoTitle h1 {
     font-size: 1.5rem;
     color: var(--color-text-secundary);
 }
 
-.carouselTitle h1 span {
+.carouselTitle h1 span,
+.catalogoTitle h1 span{
     color: white;
     font-weight: normal;
 }
 
-.carouselTitle h1 span bold{
+.carouselTitle h1 span bold,
+.catalogoTitle h1 span bold{
     color: white;
     font-weight: bolder;
 }
 
-.carouselHome {
-    display: flex;
-    flex-direction: row;
+#catalogo {
+    border-top: 2px solid var(--color-text-secundary);
+    margin-top: 10vh;
+    background-color: var(--color-bgc);
+}
+
+.catalogoTitle {
+    color: #eaeaea;
+    padding: 2vh 0;
+    box-shadow: 0px 4px 25px 4px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-bgc);
 }
