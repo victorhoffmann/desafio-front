@@ -12,13 +12,21 @@
 O site é composto pelas seguintes seções:
 
 **Home**
+
+![img](https://i.ibb.co/FHWTkQ9/home1.png)
 - **Carousel com os filmes mais recentes na base de dados** 
 - **Catálogo completo com opções de filtro por gênero e popularidade (avaliação do filme)**
 - **Catálogo tem as seguintes opções de exibição dos cards: lista ou grid**
 - Obs: contém paginação dinâmica.
 - **Ao clicar em um filme, você será redirecionado para uma nova página**.
 
+![img](https://i.ibb.co/KzHGrPH/home2.png)
+![img](https://i.ibb.co/ZKYmKxj/home3.png)
+
 **Página de filme individual** 
+
+![img](https://i.ibb.co/vkyBV4L/filme1.png)
+![img](https://i.ibb.co/dj5vMSg/filme2.png)
 - **Poster do filme**
 - **Titulo**
 - **Gênero**
